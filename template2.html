@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>BurgerSoda</title>
+
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            background-color: rgb(88, 2, 2);
+        }
+
+        header img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin-right: 1rem;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+            -webkit-text-stroke: 1px red;
+            color: rgb(236, 236, 97);
+            font-size: 2.5rem;
+            text-decoration: underline brown
+        }
+
+        header small {
+            display: block;
+            font-size: .96rem;
+            font-weight: normal;
+            color: red;
+            -webkit-text-stroke: 1px transparent;
+            letter-spacing: .10rem;
+            text-decoration: underline brown;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main nav {
+            background-color: rgb(88, 2, 2);
+            margin: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        main nav a {
+            white-space: nowrap;
+            padding: .15rem;
+            background-color: brown;
+            margin: 0 3px 3px 3px;
+            color: rgb(236, 236, 97);
+            text-decoration: none;
+            transition: .2s;
+            border-radius: .5rem;
+            height: 40px;
+            width: 220px;
+        }
+
+        main nav a i {
+            font-size: 1.1rem;
+        }
+
+        main nav a:first-child {
+            margin-top: 3px;
+        }
+
+        main nav a:hover {
+            background-color: black;
+            color: rgb(226, 226, 226);
+        }
+
+        main nav span {
+            padding-left: .6rem;
+        }
+
+        main article {
+            padding: 0 1rem;
+            background-color: hwb(0 100% 0% / 0.959);
+        }
+
+        .img-center small {
+            display: block;
+        }
+
+        .img-center {
+            display: table;
+            margin: auto;
+            text-align: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(88, 2, 2);
+            color: white;
+            font-size: 1.0rem;
+        }
+
+        footer a {
+            color: rgb(236, 236, 97);
+            font-size: 1.2rem;
+            padding: .5rem;
+            border-top: 1px solid brown;
+            border-bottom: 1px solid brown;
+        }
+
+        footer a:hover {
+            background: brown;
+            color: rgb(236, 236, 97);
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        /* Fundo da página */
+        body {
+            background-color: white;
+            background-image: url('img/bg/4426510.jpg');
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main-frame">
+
+        <!-- Cabeçalho -->
+        <header>
+            <a href="/" title="Página inicial"><img src="/img/logo/burger_soda_color.png"
+                    alt="Logotipo de BurgerSoda"></a>
+            <h1>BurgerSoda<small>Podrão com sofisticação.</small></h1>
+        </header>
+
+        <main>
+
+            <!-- Menu principal -->
+
+            <nav>
+
+                <a href="/" title="Página inicial"><i class="fa-solid fa-house fa-fw"></i><span>Início</span></a>
+                <a href="/" title="Todos os sanduiches"><i
+                        class="fa-solid fa-burger fa-fw"></i><span>Sanduíches</span></a>
+                <a href="/" title="Todas as pizzas"><i class="fa-solid fa-pizza-slice fa-fw"></i><span>Pizzas</span></a>
+                <a href="/" title="Todas as bebidas"><i class="fa-solid fa-blender fa-fw"></i><span>Bebidas</span></a>
+                <a href="/"><i class="fa-solid fa-candy-cane fa-fw"></i><span>Doces</span></a>
+                <a href="/"><i class="fa-solid fa-shrimp fa-fw"></i><span>Acompanhamentos</span></a>
+
+            </nav>
+
+            <!-- Conteúdo -->
+            <article>
+
+                <h2>Página inicial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nihil suscipit quae repellendus atque!
+                    Reprehenderit delectus doloribus quae minus, est voluptatum sit cum perspiciatis in rem vel veniam
+                    numquam illo?</p>
+                <p class="img-center"><img src="/img/content/podrao.jpg" alt="Podrão Gourmet"><small>Podrão Gourmet da
+                        BurgerSoda</small></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatibus, illo rem facilis a
+                    voluptate iusto quisquam reprehenderit atque nemo laboriosam distinctio eum asperiores architecto
+                    quod voluptas. Eius, omnis corporis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eveniet corporis! Sint perspiciatis
+                    ducimus tempora, odit praesentium aliquam et.</p>
+                <p>Facilis alias magni libero magnam ipsam voluptates maiores placeat adipisci ratione!</p>
+
+            </article>
+
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+
+            <table>
+
+                <th><a href="/" title="Página inicial"><i class="fa-solid fa-house fa-fw"></i></a></th>
+
+                <th>
+                    <div>&copy; Copyright 2022 BurgerSoda.</div>
+                </th>
+
+                <th><a href="#top" title="Topo da página"><i class="fa-solid fa-circle-arrow-up fa-fw"></i></a></th>
+
+            </table>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
